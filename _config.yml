@@ -226,7 +226,7 @@ sass:
 
 
 # Outputting
-permalink: /blog/:title/
+permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Europe/Oslo" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -234,6 +234,7 @@ timezone: "Europe/Oslo" # https://en.wikipedia.org/wiki/List_of_tz_database_time
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -243,11 +244,13 @@ plugins:
 
 # mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 
 # Archives
@@ -285,6 +288,13 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -328,8 +338,3 @@ defaults:
     values:
       sidebar:
         nav: "docs"
-
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
