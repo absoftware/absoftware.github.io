@@ -27,7 +27,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -105,17 +105,20 @@ analytics:
 # Site Author
 author:
   name             : "Ariel Bogdziewicz"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : "/assets/images/author.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "iOS apps and PHP/MySQL backend services. Familiar also with C/C++, C#, web development and Linux systems."
   location         : "Kristiansand, Norway"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
+    - label: "AB Software"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://absoftware.io"
+    - label: "iOS Master PRO"
+      icon: "fas fa-fw fa-link"
+      url: "https://iosmaster.pro"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -236,6 +239,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -294,6 +298,7 @@ defaults:
       author_profile: false
       share: true
       classes: wide
+      show_date: true
   # _pages
   - scope:
       path: ""
@@ -302,6 +307,7 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
+      show_date: true
   # _posts
   - scope:
       path: ""
@@ -314,6 +320,7 @@ defaults:
       share: true
       related: true
       classes: wide
+      show_date: true
   # _portfolio
   - scope:
       path: ""
