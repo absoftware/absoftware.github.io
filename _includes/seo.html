@@ -38,6 +38,12 @@
 {%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url -%}
 {%- assign page_teaser_image = page_teaser_image | escape -%}
 
+{%- assign page_teaser_image_width = page.header.teaser_width | default: site.og_image_width -%}
+{%- assign page_teaser_image_width = page_teaser_image_width | escape -%}
+
+{%- assign page_teaser_image_height = page.header.teaser_height | default: site.og_image_height -%}
+{%- assign page_teaser_image_height = page_teaser_image_height | escape -%}
+
 {%- assign site_og_image = site.og_image | absolute_url -%}
 {%- assign site_og_image = site_og_image | escape -%}
 
@@ -71,6 +77,9 @@
 <meta property="og:image" content="{{ page_large_image }}">
 {% elsif page_teaser_image %}
 <meta property="og:image" content="{{ page_teaser_image }}">
+<meta property="og:image:secure_url" content="{{ page_teaser_image }}">
+<meta property="og:image:width" content="{{ page_teaser_image_width }}">
+<meta property="og:image:height" content="{{ page_teaser_image_height }}">
 {% endif %}
 
 {% if site.twitter.username %}
