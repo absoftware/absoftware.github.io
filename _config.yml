@@ -21,7 +21,7 @@ title_separator          : "|"
 subtitle                 : "Clear and detailed articles about software" # site tagline that appears below site title in masthead
 name                     : "Ariel Bogdziewicz"
 description              : "An amazing website."
-url                      : "https://absoftware.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://absoftware.blog" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -115,10 +115,10 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "AB Software"
       icon: "fas fa-fw fa-link"
-      url: "https://absoftware.io"
+      # url: "https://absoftware.io"
     - label: "iOS Master PRO"
       icon: "fas fa-fw fa-link"
-      url: "https://iosmaster.pro"
+      # url: "https://iosmaster.pro"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -195,7 +195,7 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
+encoding: "UTF-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
@@ -216,7 +216,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
 
 # Sass/SCSS
@@ -226,7 +225,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:categories/:title
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Europe/Oslo" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -294,7 +293,7 @@ compress_html:
 collections:
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path
 
 
 # Defaults
@@ -309,6 +308,8 @@ defaults:
       share: true
       classes: wide
       show_date: true
+      sidebar:
+        nav: "docs"
   # _pages
   - scope:
       path: ""
@@ -331,10 +332,3 @@ defaults:
       related: true
       classes: wide
       show_date: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      sidebar:
-        nav: "docs"
