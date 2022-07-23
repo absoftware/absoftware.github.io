@@ -11,6 +11,8 @@ header:
 
 ![Image](../assets/images/2020-09-07-storyboards-overlay.png)
 
+There is no benefit to using Xcode Storyboards at all! Not even one! This article presents the complete list of reasons. But first, have some lemon balm or something else to calm you down before reading especially when you like this tool.
+
 ## When did it happen? 🤦🏼‍♂️
 
 I couldn't write my first post about something else after long years of development an iOS applications. How could I expect that it's so terrible when iOS SDK 5.0 brought wonderful ARC (automatic reference counter) and Storyboards to improve our performance at work. Everyone started using it to be more modern and write less code 🤩 The best code is the one that doesn't exist. Sounds right?
