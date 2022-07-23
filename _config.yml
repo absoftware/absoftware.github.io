@@ -20,7 +20,7 @@ title                    : "AB Software Blog"
 title_separator          : "|"
 subtitle                 : "Clear and detailed articles about software" # site tagline that appears below site title in masthead
 name                     : "Ariel Bogdziewicz"
-description              : "An amazing website."
+description              : "Blog posts about creating iOS and Android applications, PHP/MySQL backend services and websites."
 url                      : "https://absoftware.blog" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
