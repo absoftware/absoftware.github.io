@@ -292,10 +292,10 @@ compress_html:
 
 
 # Collections
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path
 
 
 # Categories
@@ -320,18 +320,6 @@ default_categories:
 
 # Defaults
 defaults:
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      classes: wide
-      show_date: true
-      sidebar:
-        nav: "docs"
   # _pages
   - scope:
       path: ""
