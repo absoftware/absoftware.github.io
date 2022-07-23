@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -38,7 +38,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                : "569602148150933"
-    num_posts            : 10 # 5 (default)
+    num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
@@ -98,9 +98,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : 3856309331
     anonymize_ip         : # true, false (default)
 
 
@@ -271,16 +271,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -296,6 +296,26 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path
+
+
+# Categories
+default_categories:
+  iOS:
+    teaser: "assets/images/teaser-ios.png"
+  Android:
+    teaser: "assets/images/teaser-android.png"
+  Web:
+    teaser: "assets/images/teaser-web.png"
+  PHP:
+    teaser: "assets/images/teaser-php.png"
+  MySQL:
+    teaser: "assets/images/teaser-mysql.png"
+  C/C++:
+    teaser: "assets/images/teaser-cpp.png"
+  Git:
+    teaser: "assets/images/teaser-git.png"
+  Bash:
+    teaser: "assets/images/teaser-bash.png"
 
 
 # Defaults

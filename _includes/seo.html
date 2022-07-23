@@ -32,7 +32,9 @@
 {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url -%}
+{%- assign main_category = page.categories[0] -%}
+
+{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | default: site.default_categories[main_category].teaser | absolute_url -%}
 {%- assign page_large_image = page_large_image | escape -%}
 
 {%- assign page_large_image_width = page.header.og_image_width | default: page.header.overlay_image_width | default: page.header.image_width -%}
@@ -41,7 +43,7 @@
 {%- assign page_large_image_height = page.header.og_image_height | default: page.header.overlay_image_height | default: page.header.image_height -%}
 {%- assign page_large_image_height = page_large_image_height | escape -%}
 
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url -%}
+{%- assign page_teaser_image = page.header.teaser | default: site.default_categories[main_category].teaser | default: site.og_image | absolute_url -%}
 {%- assign page_teaser_image = page_teaser_image | escape -%}
 
 {%- assign page_teaser_image_width = page.header.teaser_width | default: site.og_image_width -%}
