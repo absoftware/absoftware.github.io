@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+body {
+    font-family: "Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3b9cba;
+
+    a {
+        code {
+            color: #009ca3;
+            font-size: 85%;
+        }
+    }
+}
+
+.page__title a:link, .page__title a:visited {
+    color: lightskyblue;
+    font-size: 115%;
+    font-weight: normal;
+}
+
+.page__title a:link:hover, .page__title a:visited:hover {
+    color: white;
+}
+
+.page__meta {
+    color: darkgray;
+}
+
+.archive__item-title a:link, .archive__item-title a:visited {
+    color: lightskyblue;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.archive__item-title a:link:hover, .archive__item-title a:visited:hover {
+    color: white;
+}
+
+.page__content :not(pre)>code {
+    background-color: #3b5998;
+}

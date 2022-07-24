@@ -5,11 +5,7 @@ excerpt: "There is no benefit to using Xcode Storyboards at all! Not even one! T
 date: 2020-09-07 23:55:12 +0200
 categories: ["iOS"]
 tags: ["Xcode", "Xcode Storyboards"]
-header:
-  og_image: "assets/images/2020-09-07-storyboards-overlay.png"
 ---
-
-![Image](../assets/images/2020-09-07-storyboards-overlay.png)
 
 There is no benefit to using Xcode Storyboards at all! Not even one! This article presents the complete list of reasons. But first, have some lemon balm or something else to calm you down before reading especially when you like this tool.
 
