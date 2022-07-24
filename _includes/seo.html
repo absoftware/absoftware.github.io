@@ -37,19 +37,19 @@
 {%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | default: site.default_categories[main_category].teaser | absolute_url -%}
 {%- assign page_large_image = page_large_image | escape -%}
 
-{%- assign page_large_image_width = page.header.og_image_width | default: page.header.overlay_image_width | default: page.header.image_width -%}
+{%- assign page_large_image_width = page.header.og_image_width | default: page.header.overlay_image_width | default: page.header.image_width | default: "1200" -%}
 {%- assign page_large_image_width = page_large_image_width | escape -%}
 
-{%- assign page_large_image_height = page.header.og_image_height | default: page.header.overlay_image_height | default: page.header.image_height -%}
+{%- assign page_large_image_height = page.header.og_image_height | default: page.header.overlay_image_height | default: page.header.image_height | default: "630" -%}
 {%- assign page_large_image_height = page_large_image_height | escape -%}
 
 {%- assign page_teaser_image = page.header.teaser | default: site.default_categories[main_category].teaser | default: site.og_image | absolute_url -%}
 {%- assign page_teaser_image = page_teaser_image | escape -%}
 
-{%- assign page_teaser_image_width = page.header.teaser_width | default: site.og_image_width -%}
+{%- assign page_teaser_image_width = page.header.teaser_width | default: site.og_image_width | default: "1200" -%}
 {%- assign page_teaser_image_width = page_teaser_image_width | escape -%}
 
-{%- assign page_teaser_image_height = page.header.teaser_height | default: site.og_image_height -%}
+{%- assign page_teaser_image_height = page.header.teaser_height | default: site.og_image_height | default: "630" -%}
 {%- assign page_teaser_image_height = page_teaser_image_height | escape -%}
 
 {%- assign site_og_image = site.og_image | absolute_url -%}
