@@ -1,3 +1,3 @@
-# AB Software
+# AB Software Blog
 
-This repository contains source code for website [https://absoftware.github.io](https://absoftware.github.io).
+This repository contains source code for website [https://absoftware.blog](https://absoftware.blog).
